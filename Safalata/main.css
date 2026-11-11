@@ -1,0 +1,150 @@
+.reg-btn{
+background-color: #0e065c;
+color: white; 
+}
+.reg-btn:hover{
+background-color: #402dec;
+}
+.form{
+    font-size: 30px;
+    border: 2px solid #ebeaf1;
+    padding: 20px; 
+    width: 500px; 
+    background-color: #bfbdca; 
+    justify-content: left;
+
+}
+@keyframes slideIn {
+    from {
+        opacity : 0;
+        transform: translateX(-30%);
+    }
+    to {
+        opacity : 1;
+        transform: translateX(0);
+    }
+}
+.course-btn {
+    background-color: #bfbdca;
+    padding: 40px;
+    border-radius: 10px;
+    opacity: 0;
+}
+.course-btn.animate {
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+.course-btn:nth-child(2){
+    animation-delay: 0.2s;
+}
+.course-btn:nth-child(3){
+    animation-delay: 0.4s;
+}
+.course-btn:nth-child(4){
+    animation-delay: 0.6s;
+}
+.course-btn:nth-child(5){
+    animation-delay: 0.8s;
+}
+.course-heading{
+    font-size: 25px;
+    color: #0e065c;
+    margin-top: 0px;
+}
+.course-btn ul {
+    margin: 0; 
+    padding-left: 25px; 
+    text-align: left;
+    font-size: 15px;
+}
+.course-btn:hover{
+    background-color: #0e065c; 
+    color: white;
+}
+.course-btn:hover .course-heading {
+    color: white;
+}
+.side-design{
+    height: 400px;
+    width: 50px;
+}
+.headings{
+    font-size: 40px;
+    color: #0e065c;
+    text-align: left;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+.chooseus{
+    font-size: 20px;
+    text-align: left;
+    
+}
+.side-pic{
+    height: 400px;
+    width: 500px;
+}
+.chooseus-cards{
+    display:flex;
+    gap: 20px;
+}
+.headings2{
+    font-size: 40px;
+    color: #0e065c;
+    text-align: right;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    margin-right: 50px;
+}
+.chooseus2{
+    font-size: 20px;
+    text-align: right;
+    margin-right: 50px;
+}
+@keyframes slideBySlide {
+            0%, 30% { transform: translateX(0); }       
+            33%, 63% { transform: translateX(-33.33%); } 
+            66%, 96% { transform: translateX(-66.66%); } 
+            100% { transform: translateX(0); }           
+        }
+        .slide-main {
+            width: 100%;
+            max-width: 1200px;
+            height: 600px;
+            margin: 30px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .slide-container {
+            display: flex;
+            width: 300%; 
+            height: 100%;
+            animation: slideBySlide 9s ease-in-out infinite;
+        }
+
+        .slide {
+            width: 33.33%; 
+            height: 100%;
+            flex-shrink: 0;
+            background-color: #bfbdca; 
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+           
+        }
+        .slide-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 10; 
+ 
+        }
+
